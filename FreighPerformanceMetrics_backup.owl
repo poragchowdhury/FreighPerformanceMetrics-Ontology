@@ -1,0 +1,771 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="file:///FreighPerformanceMetrics.owl#"
+     xml:base="file:///FreighPerformanceMetrics.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="file:///FreighPerformanceMetrics.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#Calculates -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#Calculates">
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#CommuterStressIndex"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Density"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#LevelOfService"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TrafficVolume"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTime"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTimeIndex"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTimeReliability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TimeCausedBy -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#TimeCausedBy">
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#EvacuationClearenceTime"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Incident"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ResponseTimeToIncidents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#affects -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#affects">
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#GasEmission"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#GasolinePrice"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TollRevenue"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TrafficVolume"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#cause -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#cause">
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#DelayCausedByIncidents"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#costOf -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#costOf">
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ValueOfTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#coversArea -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#coversArea">
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#AveragePeakHourDelay"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CO2Emission"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#City"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ComercialVehicleSafetyViolations"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#CommuterStressIndex"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CongestionCost"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CongestionTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#DelayCausedByIncidents"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Density"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#DieselPrice"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#EvacuationClearenceTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#GasEmission"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#GasolinePrice"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Incident"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#LevelOfService"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#PercentOfSystemCongestedClass"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#PercentOfTravelCongested"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#PortOfEntryAverageWaitingTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#RecurringDelay"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ResponseTimeToIncidents"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Speed"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#State"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TollRevenue"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TrafficVolume"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TravelCosts"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTime"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTimeIndex"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTimeReliability"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#ValueOfTime"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#VehicleMilesTraveled"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#WeatherRelatedIncidents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#hasMeasurement -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#hasMeasurement">
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#AADT"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#AverageOfIncidentsPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#AveragePeakHourDelay"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#CasesPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ComercialVehicleSafetyViolations"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CommuterStressIndex"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CongestionCost"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CongestionTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#DelayCausedByIncidents"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Density"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#DieselPrice"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#DimensionLess"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#DollarPerHour"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#DollarPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#EvacuationClearenceTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#FatalIncidents"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#GasolinePrice"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#HourPerDay"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#HourPerVeh"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Hours"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#HoursPerIncident"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Incident"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#MPHAverageOfAllLanes"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Minutes"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#MoneyPerGallon"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#MoneyPerYear"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#NumberOfFatalIncidentPerYear"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#NumberOfViolationsPerTruckPerDay"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#NumebrDefinedIncidentsPerYear"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Percent"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#PercentOfSystemCongestedClass"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#PercentOfTravelCongested"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#PersonsPerVehicle"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#RecurringDelay"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ResponseTimeToIncidents"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#SecurityForHighwayAndTransit"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Speed"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TollRevenue"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TotalMoneyPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TrafficVolume"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTimeIndex"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TruckCommodityValue"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ValueOfTime"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#VehHour"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#VehMile"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#VehicleOccupancy"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#WeatherRelatedIncidents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#isIndicatorOf -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#isIndicatorOf">
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#AveragePeakHourDelay"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ComercialVehicleSafetyViolations"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CommuterStressIndex"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CongestionCost"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CongestionTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#DelayCausedByIncidents"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Density"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#EnvironmentalSustainability"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#EvacuationClearenceTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#FatalIncidents"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#FuelPrice"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#GasEmission"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Incident"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#LevelOfService"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Mobility"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#PercentOfSystemCongestedClass"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#PercentOfTravelCongested"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#PortOfEntryAverageWaitingTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#RecurringDelay"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ResponseTimeToIncidents"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Safety"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#SecurityForHighwayAndTransit"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Speed"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TollRevenue"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TrafficCongestion"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TrafficVolume"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TravelCosts"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTimeIndex"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTimeReliability"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#ValueOfTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#VehicleMilesTraveled"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#WeatherRelatedIncidents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#isPartOf">
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#AveragePeakHourDelay"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#CongestionCost"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CongestionTime"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#EnvironmentalSustainability"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Mobility"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#PerformanceMetrics"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#PortOfEntryAverageWaitingTime"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#RecurringDelay"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Safety"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TollRevenue"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TrafficCongestion"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TravelCosts"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TravelCosts"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTime"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TravelTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#isTypeOf">
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CO2Emission"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#COSO2NOXEmmission"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#DieselPrice"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#FatalIncidents"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#FuelPrice"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#GasEmission"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#GasolinePrice"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Incident"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Mobility"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#TruckCommodityValue"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#VehicleOccupancy"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#WeatherRelatedIncidents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#multiplyByLength -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#multiplyByLength">
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TrafficVolume"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#VehicleMilesTraveled"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#uses -->
+
+    <owl:ObjectProperty rdf:about="file:///FreighPerformanceMetrics.owl#uses">
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#LevelOfService"/>
+        <rdfs:range rdf:resource="file:///FreighPerformanceMetrics.owl#Speed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="file:///FreighPerformanceMetrics.owl#hasValue">
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#AADT"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#AverageOfIncidentsPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#CasesPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#DimensionLess"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#DollarPerHour"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#DollarPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#HourPerDay"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#HourPerVeh"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#HoursPerIncident"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#MPHAverageOfAllLanes"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Minutes"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#MoneyPerGallon"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#MoneyPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#NumberOfFatalIncidentPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#NumberOfViolationsPerTruckPerDay"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#NumebrDefinedIncidentsPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#Percent"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#PersonsPerVehicle"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#TotalMoneyPerYear"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#VehHour"/>
+        <rdfs:domain rdf:resource="file:///FreighPerformanceMetrics.owl#VehMile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#AADT -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#AADT"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#AverageOfIncidentsPerYear -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#AverageOfIncidentsPerYear"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#AveragePeakHourDelay -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#AveragePeakHourDelay"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#BridgeOfTheAmericasAverageWaitingTime -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#BridgeOfTheAmericasAverageWaitingTime"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#CO2Emission -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#CO2Emission"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#COSO2NOXEmmission -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#COSO2NOXEmmission"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#CasesPerYear -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#CasesPerYear"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#City -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#City"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#ComercialVehicleSafetyViolations -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#ComercialVehicleSafetyViolations"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#CommuterStressIndex -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#CommuterStressIndex"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#CongestionCost -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#CongestionCost"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#CongestionTime -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#CongestionTime"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#DelayCausedByIncidents -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#DelayCausedByIncidents"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#Density -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#Density"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#DieselPrice -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#DieselPrice"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#DimensionLess -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#DimensionLess"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#DollarPerHour -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#DollarPerHour"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#DollarPerYear -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#DollarPerYear"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#EnvironmentalSustainability -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#EnvironmentalSustainability"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#EvacuationClearenceTime -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#EvacuationClearenceTime"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#FatalIncidents -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#FatalIncidents"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#FuelPrice -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#FuelPrice"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#GasEmission -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#GasEmission"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#GasolinePrice -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#GasolinePrice"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#GeographicalRegion -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#GeographicalRegion"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#HourPerDay -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#HourPerDay"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#HourPerVeh -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#HourPerVeh"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#Hours -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#Hours"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#HoursPerIncident -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#HoursPerIncident"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#Incident -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#Incident"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#LevelOfService -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#LevelOfService"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#MPHAverageOfAllLanes -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#MPHAverageOfAllLanes"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#Minutes -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#Minutes"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#Mobility -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#Mobility"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#MoneyPerGallon -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#MoneyPerGallon"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#MoneyPerYear -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#MoneyPerYear"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#NumberOfFatalIncidentPerYear -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#NumberOfFatalIncidentPerYear"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#NumberOfViolationsPerTruckPerDay -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#NumberOfViolationsPerTruckPerDay"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#NumebrDefinedIncidentsPerYear -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#NumebrDefinedIncidentsPerYear"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#Percent -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#Percent"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#PercentOfSystemCongestedClass -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#PercentOfSystemCongestedClass"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#PercentOfTravelCongested -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#PercentOfTravelCongested"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#PerformanceMetrics -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#PerformanceMetrics"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#PersonsPerVehicle -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#PersonsPerVehicle"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#PortOfEntryAverageWaitingTime -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#PortOfEntryAverageWaitingTime"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#RecurringDelay -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#RecurringDelay"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#ResponseTimeToIncidents -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#ResponseTimeToIncidents"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#Safety -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#Safety"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#SecurityForHighwayAndTransit -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#SecurityForHighwayAndTransit"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#Speed -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#Speed"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#State -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#State"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TollRevenue -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TollRevenue"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TonsPerYear -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TonsPerYear"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TotalMoneyPerYear -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TotalMoneyPerYear"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TrafficCongestion -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TrafficCongestion"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TrafficVolume -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TrafficVolume"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TravelCosts -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TravelCosts"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TravelTime -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TravelTime"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TravelTimeIndex -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TravelTimeIndex"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TravelTimeReliability -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TravelTimeReliability"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#TruckCommodityValue -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#TruckCommodityValue"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#ValueOfTime -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#ValueOfTime"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#VehHour -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#VehHour"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#VehMile -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#VehMile"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#VehicleMilesTraveled -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#VehicleMilesTraveled"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#VehicleOccupancy -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#VehicleOccupancy"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#WeatherRelatedIncidents -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#WeatherRelatedIncidents"/>
+    
+
+
+    <!-- file:///FreighPerformanceMetrics.owl#YsletaBridgeAverageWaitingTime -->
+
+    <owl:Class rdf:about="file:///FreighPerformanceMetrics.owl#YsletaBridgeAverageWaitingTime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 24 -->
+
+    <owl:NamedIndividual rdf:about="24">
+        <rdf:type rdf:resource="file:///FreighPerformanceMetrics.owl#WeatherRelatedIncidents"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 4 -->
+
+    <owl:NamedIndividual rdf:about="4">
+        <rdf:type rdf:resource="file:///FreighPerformanceMetrics.owl#FatalIncidents"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 7.469221835075493 -->
+
+    <owl:NamedIndividual rdf:about="7.469221835075493">
+        <rdf:type rdf:resource="file:///FreighPerformanceMetrics.owl#Minutes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 861 -->
+
+    <owl:NamedIndividual rdf:about="861">
+        <rdf:type rdf:resource="file:///FreighPerformanceMetrics.owl#AverageOfIncidentsPerYear"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.4) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1462933165893" name="file:///FreighPerformanceMetrics.owl" uri="FreighPerformanceMetrics_backup.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1462933165893" name="file:///FreighPerformanceMetrics_pdfDataAdded.owl" uri="FreighPerformanceMetrics_pdfDataAdded.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1462933165893" name="duplicate:file:///OurOntology.owl" uri="OurOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1462933165893" name="duplicate:file:///OurOntology.owl" uri="OurOntology_backup.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1462933165893" name="file:/http://semanticsience.org/resource/fp:freighPerformanceMetrics.owl" uri="FreighPerformanceMetrics.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1462933165893" name="file:/http://semanticsience.org/resource/fpFreighPerformanceMetrics.owl" uri="JustInCase/FreighPerformanceMetrics.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1462933165893" name="shadowed:file:///OurOntology.owl" uri="JustInCase/OurOntology.owl"/>
+    </group>
+</catalog>
